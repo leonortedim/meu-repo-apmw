@@ -19,6 +19,7 @@ height: auto;
 
 .centeritems{
   text-align: center;
+  width: 90%;
  } 
 
 a {
@@ -53,8 +54,8 @@ ul {
 }
 
 .flexbox img {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
   object-fit: cover;
 }
 
