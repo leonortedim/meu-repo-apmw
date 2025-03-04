@@ -1,8 +1,13 @@
 img{
 display: block;
-width: 20%;
+width: 70%;
 height: auto;
 }
+
+#siteaspeto{
+  color: white;
+  background-color: #48494a;
+ } 
 
 .flexbox{
   display: flex;
@@ -14,4 +19,8 @@ height: auto;
 
 .centeritems{
   text-align: center;
+ } 
+
+br{
+  color: red;
  } 
