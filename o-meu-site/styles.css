@@ -53,7 +53,7 @@ ul {
 }
 
 .flexbox img {
-  height: auto;
+  height: 200px;
   width: auto;
   object-fit: cover;
 }
