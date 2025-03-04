@@ -4,3 +4,7 @@ width: 20%;
 height: auto;
 }
 
+.flexbox{
+  display: flex;
+  justify-content: space-between;
+}
