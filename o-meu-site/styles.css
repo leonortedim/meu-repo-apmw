@@ -4,19 +4,15 @@ width: 70%;
 height: auto;
 }
 
+#img50{
+  width: 50%;
+}
+
 #siteaspeto{
   color: white;
   background-color: #48494a;
   text-align: center;
  } 
-
-.flexbox{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 30%;
-  margin-right: 30%;
-}
 
 .centeritems{
   text-align: center;
@@ -33,10 +29,31 @@ a:hover {
 }
 
 a:visited {
-  color: white; /* Changes color for visited links */
+  color: white;
 }
 
 a:active {
   color: white;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.flexbox img {
+  height: 200px;
+  width: auto;
+  object-fit: cover;
+}
+
 
