@@ -7,4 +7,11 @@ height: auto;
 .flexbox{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right:auto;
 }
+
+.centeritems{
+  text-align: center;
+ } 
