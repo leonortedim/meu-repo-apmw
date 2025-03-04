@@ -7,6 +7,7 @@ height: auto;
 #siteaspeto{
   color: white;
   background-color: #48494a;
+  text-align: center;
  } 
 
 .flexbox{
@@ -21,6 +22,21 @@ height: auto;
   text-align: center;
  } 
 
-br{
-  color: red;
- } 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: grey; 
+  text-decoration: underline;
+}
+
+a:visited {
+  color: white; /* Changes color for visited links */
+}
+
+a:active {
+  color: white;
+}
+
