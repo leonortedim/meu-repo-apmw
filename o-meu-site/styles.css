@@ -5,6 +5,8 @@ height: auto;
 }
 
 #img50{
+  margin-left:auto;
+  margin-right:auto;
   width: 50%;
 }
 
@@ -45,13 +47,12 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
   max-width: 80%;
   margin: 0 auto;
 }
 
 .flexbox img {
-  height: 200px;
+  height: 40%;
   width: auto;
   object-fit: cover;
 }
