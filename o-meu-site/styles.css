@@ -55,7 +55,7 @@ ul {
 
 .flexbox img {
   height: auto;
-  width: 100%;
+  width: auto;
   object-fit: cover;
 }
 
