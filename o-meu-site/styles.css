@@ -47,7 +47,7 @@ ul {
 .flexbox {
   display: flex;
   align-items: center;
-  gap:10px;
+  justify-content: space-between;
   width: 80%;
   margin: 0 auto;
 }
