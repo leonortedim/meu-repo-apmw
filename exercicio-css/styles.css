@@ -29,7 +29,14 @@
     font-weight: 800;
     font-style: normal;
   }
-  
+
+.size20 {
+    font-size: 20px;
+}
+
+.size70 {
+    font-size: 70px;
+}
 
 /* This is a comment */
 
@@ -71,7 +78,7 @@ ul {
 
 .banner-content {
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 2%; /* Moves text closer to the left */
    
     text-align: left; /* Aligns text to the left */
@@ -79,6 +86,22 @@ ul {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
+.watch-button {
+    display: inline-block;
+    background-color: #ff6666;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.watch-button:hover {
+    background-color: #cc3333;
+}
+
+.colorbrown {
+    background-color: #877761;
+}
 
 
 /* content */
@@ -122,4 +145,12 @@ ul {
 
 .marginR30 {
     margin-right: 30px;
+}
+
+.marginBzero {
+    margin-bottom: 0;
+}
+
+.marginT10{
+    margin-top: 10px;
 }
