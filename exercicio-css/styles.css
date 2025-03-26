@@ -60,7 +60,7 @@ header {
 }
 
 main {
-    padding: 100px 20px;
+    padding: 10px 20px;
 }
 
 nav a {
@@ -79,17 +79,16 @@ ul {
 .banner-content {
     position: absolute;
     top: 15%;
-    left: 2%; /* Moves text closer to the left */
+    left: 2%;
    
-    text-align: left; /* Aligns text to the left */
-    color: white; /* Keeps it readable */
+    text-align: left;
+    color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .watch-button {
     display: inline-block;
     background-color: #ff6666;
-    color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 15px;
@@ -101,6 +100,10 @@ ul {
 
 .colorbrown {
     background-color: #877761;
+}
+
+.colorblue {
+    background-color: #379DAB;
 }
 
 
@@ -123,6 +126,10 @@ ul {
     justify-content: flex-start;
 }
 
+.flexcenter {
+    justify-content: center;
+}
+
 /* img-width */
 
 .width10 {
@@ -141,6 +148,14 @@ ul {
     width: 50%;
 }
 
+.width80 {
+    width: 80%;
+}
+
+.width100 {
+    width: 100%;
+}
+
 /* margins */
 
 .marginR30 {
@@ -151,42 +166,63 @@ ul {
     margin-bottom: 0;
 }
 
+.marginB45 {
+    margin-bottom: 45px;
+}
+
+.marginTzero {
+    margin-top: 0;
+}
+
 .marginT10{
     margin-top: 10px;
 }
 
+.paddingBT25 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* text */
+
+.txtcenter {
+    text-align: center;
+}
+
+.txtleft {
+    text-align: left;
+}
+
+.white {
+    color: white;
+}
+
+
 /* carousel */
 
 .character-carousel {
-    width: 100%;
-    overflow: hidden; /* Hides elements that are outside the container */
+    overflow: hidden; 
     margin: 20px 0;
-    position: relative;
   }
   
   .carousel-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding */
+    transition: transform 0.5s ease-in-out; 
   }
   
   .carousel-item {
-    flex: 0 0 33.33%; /* Shows 3 items at a time (adjust if needed) */
-    text-align: center;
+    flex: 0 0 20%; 
   }
   
-  .carousel-item img {
-    width: 80%; /* Adjust based on your image size */
-    border-radius: 10px;
-    transition: transform 0.3s ease; /* Slight zoom effect */
+  .carousel-item img { 
+    border-radius: 15px;
+    transition: transform 0.3s ease; 
   }
   
   .carousel-item img:hover {
-    transform: scale(1.05); /* Zoom in on hover */
+    transform: scale(1.05);
   }
   
   .carousel-item p {
-    font-size: 1.2rem;
-    color: #fff;
+    font-size: 20px;
     margin-top: 10px;
-    font-family: 'Arial', sans-serif;
   }
