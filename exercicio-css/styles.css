@@ -47,7 +47,7 @@ img {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    cursor: url('imagens/cursor.png') 16 16, auto;
 }
 
 header {
@@ -154,3 +154,39 @@ ul {
 .marginT10{
     margin-top: 10px;
 }
+
+/* carousel */
+
+.character-carousel {
+    width: 100%;
+    overflow: hidden; /* Hides elements that are outside the container */
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding */
+  }
+  
+  .carousel-item {
+    flex: 0 0 33.33%; /* Shows 3 items at a time (adjust if needed) */
+    text-align: center;
+  }
+  
+  .carousel-item img {
+    width: 80%; /* Adjust based on your image size */
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Slight zoom effect */
+  }
+  
+  .carousel-item img:hover {
+    transform: scale(1.05); /* Zoom in on hover */
+  }
+  
+  .carousel-item p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+  }
