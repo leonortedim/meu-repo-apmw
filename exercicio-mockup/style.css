@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'NexaLight';
+    src: url('font/Nexa-ExtraLight.ttf') format('truetype');
+    font-weight: 300; 
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'NexaBold';
+    src: url('font/Nexa-Heavy.ttf') format('truetype');
+    font-weight: 700; 
+    font-style: normal;
+  }
+
+  .boldtxt {
+    font-family: 'NexaBold', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .lighttxt {
+    font-family: 'NexaLight', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
