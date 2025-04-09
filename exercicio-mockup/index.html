@@ -80,9 +80,9 @@
 
 
 
-       <div class="relative flex justify-center items-center mt-12 overflow-visible">
+       <div class="relative flex justify-center items-center mt-12 overflow-x-hidden">
         <!-- Left shadow card -->
-        <div class="hidden md:block absolute -left-6 rotate-12 opacity-60 z-0 max-w-sm w-full bg-gradient-to-br from-[#2a2a2a]/80 to-[#1a1a1a]/80 rounded-3xl p-6">
+        <div class="hidden md:block absolute -left-6 rotate-12 opacity-60 z-0 md:max-w-sm w-full bg-gradient-to-br from-[#2a2a2a]/80 to-[#1a1a1a]/80 rounded-3xl p-6">
           <p>Exactly what I was looking for. Fits my whiskers comfortably and purrfect for any occasion.</p>
       
 
@@ -107,7 +107,7 @@
         </div>
       
         <!-- Right shadow card -->
-        <div class="hidden md:block absolute -right-6 -rotate-12 opacity-60 z-0 max-w-sm w-full bg-gradient-to-br from-[#2a2a2a]/80 to-[#1a1a1a]/80 rounded-3xl p-6">
+        <div class="hidden md:block absolute -right-6 -rotate-12 opacity-60 z-0 md:max-w-sm w-full bg-gradient-to-br from-[#2a2a2a]/80 to-[#1a1a1a]/80 rounded-3xl p-6">
           <p>Exactly what I was looking for. Fits my whiskers comfortably and purrfect for any occasion.</p>
       
 
@@ -158,15 +158,22 @@
       </div>
 
 
+
+
+
       <h1 class="boldtxt text-center text-2xl mt-16 mb-4 text-white">Get Ready to Save Big!</h1>
+      
       
 
       <div class="grid grid-flow-col grid-rows-2 px-4 gap-2">
 
+
         <div class="aspect-square rounded-full bg-cover bg-center bg-no-repeat bg-[url(img/cat1.png)]">
         </div>
+
         <div class="aspect-square rounded-3xl bg-cover bg-center bg-no-repeat bg-[url(img/cat3.png)]">
         </div>
+
         <div class="aspect-square rounded-3xl relative bg-[#f3e2cc] flex justify-center">
           <h2 class="absolute lighttxt text-center text-l top-1  text-black">Fall Sale</h2>
           <h1 class="absolute boldtxt text-center text-2xl top-6 text-black">50% OFF</h1>
@@ -175,39 +182,50 @@
             <p>Shop Now</p>
             <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></button>
            </div>
+      
         </div>
+
         <div class="aspect-square rounded-full bg-cover bg-center bg-no-repeat bg-[url(img/cat4.png)]">
         </div>
+
+        
+        <div class="hidden md:block aspect-square rounded-full bg-[#e3e7e7]">
+        </div>
+
+        <div class="hidden md:block aspect-square rounded-3xl bg-[#a08887]">
+        </div>
+
        </div>
 
 
        <h1 class="boldtxt text-center text-2xl mt-16 mb-4 text-white">FAQ</h1>
 
+      <section class="md:mx-28">
 
        <details class="mb-4 group">
-        <summary class="bg-[#222222] text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> What payment methods do you accept? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
-        <p class="bg-[#222222] text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">We accept all major credit and debit cards, including Visa, MasterCard, American Express, and Discover.</p>
+        <summary class="bg-[#222222] md:text-lg text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> What payment methods do you accept? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <p class="bg-[#222222] md:text-base text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">We accept all major credit and debit cards, including Visa, MasterCard, American Express, and Discover.</p>
       </details>
         
       <details class="mb-4 group">
-        <summary class="bg-[#222222] text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> How long does shipping take? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
-        <p class="bg-[#222222] text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">Standard shipping typically takes 5-7 business days, while expedited shipping options are available for faster delivery.</p>
+        <summary class="bg-[#222222] md:text-lg text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> How long does shipping take? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <p class="bg-[#222222] md:text-base text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">Standard shipping typically takes 5-7 business days, while expedited shipping options are available for faster delivery.</p>
       </details>
 
 
       <details class="mb-4 group">
-        <summary class="bg-[#222222] text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> How do I track my order? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
-        <p class="bg-[#222222] text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">Once your order is shipped, you will receive a confirmation email with a tracking number. You can use this number on our website’s tracking page to monitor your order’s progress.</p>
+        <summary class="bg-[#222222] md:text-lg text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> How do I track my order? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <p class="bg-[#222222] md:text-base text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">Once your order is shipped, you will receive a confirmation email with a tracking number. You can use this number on our website’s tracking page to monitor your order’s progress.</p>
       </details>
 
       <details class="mb-4 group">
-        <summary class="bg-[#222222] text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> Do you offer international shipping? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
-        <p class="bg-[#222222] text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">Yes, we offer international shipping to most countries. Shipping fees and delivery times may vary depending on your location. Please check our shipping policy for more information.</p>
+        <summary class="bg-[#222222] md:text-lg text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> Do you offer international shipping? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <p class="bg-[#222222] md:text-base text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">Yes, we offer international shipping to most countries. Shipping fees and delivery times may vary depending on your location. Please check our shipping policy for more information.</p>
       </details>
 
       <details class="mb-2 group">
-        <summary class="bg-[#222222] text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> How can I contact costumer support? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
-        <p class="bg-[#222222] text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">You can reach our customer support team via email at support@example.com or through our live chat available on our website. We're here to help you 24/7.</p>
+        <summary class="bg-[#222222] md:text-lg text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> How can I contact costumer support? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <p class="bg-[#222222] md:text-base text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">You can reach our customer support team via email at support@example.com or through our live chat available on our website. We're here to help you 24/7.</p>
       </details>
         
       <div class="text-white lighttxt flex justify-self-center pt-2 justify-between">
@@ -215,8 +233,10 @@
         <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></button>
        </div>
 
-       
+      </section>
 
+       
+      <section class="md:mx-28">
 
        <div class="bg-cover bg-center bg-no-repeat bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtKGK9PcQqWWmjNOffC8Gq7j3r7iLFEqFJsA&s')] mx-4 mb-3 mt-8 h-40 rounded-tl-xl rounded-br-xl rounded-tr-[6rem] rounded-bl-[6rem]">
       </div>
@@ -245,7 +265,7 @@
           <p class="pl-3 mr-3">Send</p>
           <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></button>
          </div>
-
+        </section>
 
 
        
