@@ -9,41 +9,50 @@
   </head>
 
   <body class="bg-black text-gray-300 lighttxt">
-    <header class="text-white"
+    <header class="text-white xl:overflow-hidden"
     >
-      <nav class="bg-black md:py-4 md:px-6 z-50 flex justify-between py-2 px-4 fixed w-full">
-        <button class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" w-6 h-6 md:w-9 md:h-9 lucide lucide-menu-icon lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
-        <div class="md:text-2xl">Elegato</div>
+      <nav class="bg-black md:py-4 md:px-6 z-50 flex justify-between py-2 px-4 fixed w-full xl:py-6 xl:px-8">
+        <button class="lg:hidden"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" w-6 h-6 md:w-9 md:h-9 lucide lucide-menu-icon lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
+        <div class="md:text-2xl lg:text-3xl">Elegato</div>
+
+        <div class="hidden lg:flex lg:gap-10 text-lg text-center items-center xl:text-xl">
+          <p>Home</p>
+          <p>New Collection</p>
+          <p>Catalog</p>
+          <p>Delivery</p>
+          <p>Contact Us</p>
+        </div>
+
         <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 md:w-9 md:h-9 lucide lucide-shopping-cart-icon lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
       </nav>
 
     </header>
 
     <main class="pt-12">
-      <h1 class="text-white boldtxt text-center text-[5rem] sm:text-[10rem] md:text-[12rem] relative z-10">
+      <h1 class="text-white boldtxt text-center text-[5rem] sm:text-[10rem] md:text-[12rem] relative z-10 lg:text-[15rem] xl:text-[21rem] xl:-mt-10">
         Elegato
        </h1>
 
-       <div class="grid grid-flow-col md:grid-cols-[1fr_2fr_1fr] grid-rows-2 px-4 gap-2 -mt-6 sm:-mt-12 md:-mt-16">
+       <div class="grid grid-flow-col md:grid-cols-[1fr_2fr_1fr] grid-rows-2 px-4 gap-2 -mt-6 sm:-mt-12 md:-mt-16 lg:-mt-20 xl:-mt-26 xl:flex">
 
 
-        <div class=" aspect-square rounded-full bg-cover bg-center bg-no-repeat bg-[url(https://creatorset.com/cdn/shop/files/preview_images/Screenshot_2024-04-24_173231_530x@2x.png?v=1713973028)]">
+        <div class="xl:w-full xl:h-full aspect-square rounded-full bg-cover bg-center bg-no-repeat bg-[url(https://creatorset.com/cdn/shop/files/preview_images/Screenshot_2024-04-24_173231_530x@2x.png?v=1713973028)]">
         </div>
 
-        <div class=" aspect-square rounded-3xl bg-cover bg-center bg-no-repeat bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsSLpZxbc2gP-HnvBsqNjHmMXudIn_2Mfxdw&s)]">
+        <div class="xl:w-full xl:h-full aspect-square rounded-3xl bg-cover bg-center bg-no-repeat bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsSLpZxbc2gP-HnvBsqNjHmMXudIn_2Mfxdw&s)]">
         </div>
 
-        <div class="hidden md:flex row-span-2 items-center justify-center w-full h-full aspect-square rounded-full bg-[#21a132]">
-          <div class=" hidden text-white lighttxt md:flex justify-self-center pt-2 mt-1 mb-10">
+        <div class="hidden md:flex row-span-2 items-center justify-center w-full h-full aspect-square rounded-full bg-[#21a132] xl:w-full xl:h-full">
+          <div class=" hidden text-white lighttxt md:flex justify-self-center pt-2 mt-1 mb-10 ">
             <p class="text-2xl">See Catalog</p>
             <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></button>
            </div>
       </div>
 
-        <div class=" aspect-square rounded-3xl bg-cover bg-center bg-no-repeat bg-[url(https://pbs.twimg.com/profile_images/1479203945931280389/uJ_xGEMu_400x400.jpg)]">
+        <div class="xl:w-full xl:h-full aspect-square rounded-3xl bg-cover bg-center bg-no-repeat bg-[url(https://pbs.twimg.com/profile_images/1479203945931280389/uJ_xGEMu_400x400.jpg)]">
         </div>
 
-        <div class=" aspect-square rounded-full bg-cover bg-center bg-no-repeat bg-[url(https://cdn.prod.website-files.com/62bdc93e9cccfb43e155104c/654e8c596f233ce204606fd3_63c3c1551c2178ab25be6fbc_Funny%2520Cat%2520Pfp%2520for%2520Tiktok%25205.jpeg)]">
+        <div class="xl:w-full xl:h-full aspect-square rounded-full bg-cover bg-center bg-no-repeat bg-[url(https://cdn.prod.website-files.com/62bdc93e9cccfb43e155104c/654e8c596f233ce204606fd3_63c3c1551c2178ab25be6fbc_Funny%2520Cat%2520Pfp%2520for%2520Tiktok%25205.jpeg)]">
         </div>
 
        </div>
@@ -57,28 +66,28 @@
 
        <div class="md:flex md:items-stretch">
 
-       <div class="bg-[#222222] py-4 px-4 mx-4 mb-3 mt-6 rounded-3xl md:mr-1 md:w-1/2">
+       <div class="bg-[#222222] py-4 px-4 mx-4 mb-3 mt-6 rounded-3xl md:mr-1 md:w-1/2 lg:text-xl">
         <p>Here you will find everything you need. Our collection is constantly expanding to suit your unique cat.</p>
        </div>
 
-       <div class="bg-[#222222] py-4 px-4 mx-4 rounded-3xl md:w-1/2 md:mt-6 md:ml-1 md:mb-3">
+       <div class="bg-[#222222] py-4 px-4 mx-4 rounded-3xl md:w-1/2 md:mt-6 md:ml-1 md:mb-3 lg:text-lg">
         <p>The cat's clothing in our new collection is both comfortable and stylish, ideal for both casual days and special occasions, all at affordable prices.</p>
        </div>
 
       </div>
 
-
+      <!-- Random Text -->
 
        <div class="text-white lighttxt flex justify-self-center pt-2">
         <p>Explore New Collection</p>
         <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></button>
        </div>
 
-       <p class="mx-6 my-12 md:mx-20 te">At Elegato, we believe that <span class="text-yellow-300">fashion is an art form</span> - one that should reflect individuality, confidence, and timeless beauty. Our journey began with a simple idea: to create clothing that not only fits your cat but also <span class="text-yellow-300">complements your kitten.</span></p>
+       <p class="mx-6 my-12 md:mx-20 lg:mx-28 lg:text-xl lg:my-20">At Elegato, we believe that <span class="text-yellow-300">fashion is an art form</span> - one that should reflect individuality, confidence, and timeless beauty. Our journey began with a simple idea: to create clothing that not only fits your cat but also <span class="text-yellow-300">complements your kitten.</span></p>
 
        <h1 class="boldtxt text-center text-2xl">We have already more than 12k cats</h1>
 
-
+       <!-- Testimonial cards -->
 
        <div class="relative flex justify-center items-center mt-12 overflow-x-hidden">
         <!-- Left shadow card -->
@@ -136,6 +145,8 @@
           <p>Exactly what I was looking for. Fits my whiskers comfortably and purrfect for any occasion.</p>
       
 
+          
+
       <div class="flex items-center justify-start mt-4 ">
         
         
@@ -158,14 +169,14 @@
       </div>
 
 
+      <!-- Sale Section -->
 
 
-
-      <h1 class="boldtxt text-center text-2xl mt-16 mb-4 text-white">Get Ready to Save Big!</h1>
+      <h1 class="boldtxt text-center md:pb-4 text-2xl mt-16 mb-4 text-white">Get Ready to Save Big!</h1>
       
       
 
-      <div class="grid grid-flow-col grid-rows-2 px-4 gap-2">
+      <div class="grid grid-flow-col grid-rows-2 px-4 gap-2 lg:my-20">
 
 
         <div class="aspect-square rounded-full bg-cover bg-center bg-no-repeat bg-[url(img/cat1.png)]">
@@ -175,11 +186,11 @@
         </div>
 
         <div class="aspect-square rounded-3xl relative bg-[#f3e2cc] flex justify-center">
-          <h2 class="absolute lighttxt text-center text-l top-1  text-black">Fall Sale</h2>
-          <h1 class="absolute boldtxt text-center text-2xl top-6 text-black">50% OFF</h1>
+          <h2 class="absolute lighttxt text-center text-l md:text-xl lg:text-2xl top-1 md:top-2 text-black">Fall Sale</h2>
+          <h1 class="absolute boldtxt text-center text-2xl md:text-3xl lg:text-4xl md:top-9 top-6 text-black">50% OFF</h1>
       
-          <div class="text-black lighttxt flex mb-2 absolute bottom-0">
-            <p>Shop Now</p>
+          <div class="text-black lighttxt flex mb-2 md:mb-4  absolute bottom-0">
+            <p class="md:text-xl">Shop Now</p>
             <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></button>
            </div>
       
@@ -198,7 +209,7 @@
        </div>
 
 
-       <h1 class="boldtxt text-center text-2xl mt-16 mb-4 text-white">FAQ</h1>
+       <h1 class="boldtxt text-center text-2xl mt-16 mb-4 text-white lg:mb-10">FAQ</h1>
 
       <section class="md:mx-28">
 
@@ -236,15 +247,15 @@
       </section>
 
        
-      <section class="md:mx-28">
+      <section class="md:mx-28 lg:flex lg:justify-between lg:mt-10">
 
-       <div class="bg-cover bg-center bg-no-repeat bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtKGK9PcQqWWmjNOffC8Gq7j3r7iLFEqFJsA&s')] mx-4 mb-3 mt-8 h-40 rounded-tl-xl rounded-br-xl rounded-tr-[6rem] rounded-bl-[6rem]">
+       <div class="bg-cover bg-center bg-no-repeat bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtKGK9PcQqWWmjNOffC8Gq7j3r7iLFEqFJsA&s')] mx-4 mb-3 mt-8 h-40 rounded-tl-xl rounded-br-xl rounded-tr-[6rem] rounded-bl-[6rem] lg:w-full lg:h-auto lg:mx-1 lg:my-0">
       </div>
       
        
       
 
-       <div class="bg-[#455b6a] space-y-3 py-10 px-4 mx-4 mb-3 mt-2 rounded-3xl">
+       <div class="bg-[#455b6a] space-y-3 py-10 px-4 mx-4 mb-3 mt-2 rounded-3xl lg:w-full lg:h-full lg:my-0">
        
         <div>
           <input type="text" id="name" name="name" placeholder="Name" 
@@ -261,7 +272,7 @@
           class="text-white w-full p-3 rounded-xl bg-[#556a77] focus:outline-none focus:ring-2 focus:ring-[#0f161a]"></textarea>
         </div>
 
-        <div class="text-white boldtxt flex pt-6">
+        <div class="text-white boldtxt flex pt-6 lg:pt-28">
           <p class="pl-3 mr-3">Send</p>
           <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></button>
          </div>
