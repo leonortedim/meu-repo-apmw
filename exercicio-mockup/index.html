@@ -3,19 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elegato</title>
     
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <body class="bg-black text-gray-300 lighttxt">
-    <header class="text-white xl:overflow-hidden"
-    >
-      <nav class="bg-black md:py-4 md:px-6 z-50 flex justify-between py-2 px-4 fixed w-full xl:py-6 xl:px-8">
+  <body class="bg-black text-gray-300 lighttxt ">
+    <div class="w-full max-w-screen-xl mx-auto">
+    <header class="text-white xl:overflow-hidden">
+      <nav class="bg-black fixed top-0 left-0 w-full z-50">
+        <div class="max-w-screen-xl mx-auto flex justify-between items-center py-2 px-4 md:py-4 md:px-6 xl:py-6 xl:px-8">
+
+        
         <button class="lg:hidden"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" w-6 h-6 md:w-9 md:h-9 lucide lucide-menu-icon lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
         <div class="md:text-2xl lg:text-3xl">Elegato</div>
 
-        <div class="hidden lg:flex lg:gap-10 text-lg text-center items-center xl:text-xl">
+        <div class="hidden lg:flex lg:gap-10 text-lg text-center items-center xl:text-xl text-[#b8b7b7]">
           <p>Home</p>
           <p>New Collection</p>
           <p>Catalog</p>
@@ -24,11 +28,12 @@
         </div>
 
         <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 md:w-9 md:h-9 lucide lucide-shopping-cart-icon lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+      </div>
       </nav>
 
     </header>
 
-    <main class="pt-12">
+    <main class="pt-12 text-[#b8b7b7]">
       <h1 class="text-white boldtxt text-center text-[5rem] sm:text-[10rem] md:text-[12rem] relative z-10 lg:text-[15rem] xl:text-[21rem] xl:-mt-10">
         Elegato
        </h1>
@@ -66,32 +71,65 @@
 
        <div class="md:flex md:items-stretch">
 
-       <div class="bg-[#222222] py-4 px-4 mx-4 mb-3 mt-6 rounded-3xl md:mr-1 md:w-1/2 lg:text-xl">
+       <div class="bg-[#222222] py-4 px-4 mx-4 mb-3 mt-6 rounded-3xl md:mr-1 md:py-10 md:px-10 md:w-1/2 lg:text-xl">
         <p>Here you will find everything you need. Our collection is constantly expanding to suit your unique cat.</p>
        </div>
 
-       <div class="bg-[#222222] py-4 px-4 mx-4 rounded-3xl md:w-1/2 md:mt-6 md:ml-1 md:mb-3 lg:text-lg">
+       <div class="bg-[#222222] py-4 px-4 mx-4 rounded-3xl md:w-1/2 md:py-10 md:px-10 md:mt-6 md:ml-1 md:mb-3 lg:text-lg xl:mr-1">
         <p>The cat's clothing in our new collection is both comfortable and stylish, ideal for both casual days and special occasions, all at affordable prices.</p>
        </div>
 
-      </div>
+       
+        <div class="text-white lighttxt xl:flex justify-center items-center hidden bg-[#222222] mx-4 rounded-3xl md:w-1/2 md:mt-6 md:ml-1 md:mb-3 lg:text-lg">
+          <p class="mr-2">Explore New Collection</p>
+          <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></button>
+         </div>
+  
+       </div>
+
+      
 
       <!-- Random Text -->
 
-       <div class="text-white lighttxt flex justify-self-center pt-2">
+       <div class="text-white lighttxt flex justify-self-center pt-2 xl:hidden">
         <p>Explore New Collection</p>
         <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></button>
        </div>
 
-       <p class="mx-6 my-12 md:mx-20 lg:mx-28 lg:text-xl lg:my-20">At Elegato, we believe that <span class="text-yellow-300">fashion is an art form</span> - one that should reflect individuality, confidence, and timeless beauty. Our journey began with a simple idea: to create clothing that not only fits your cat but also <span class="text-yellow-300">complements your kitten.</span></p>
+       <p class="text-center mx-6 my-12 md:mx-20 lg:mx-28 lg:text-xl lg:my-20 xl:mx-64">At Elegato, we believe that <span class="text-yellow-300">fashion is an art form</span> - one that should reflect individuality, confidence, and timeless beauty. Our journey began with a simple idea: to create clothing that not only fits your cat but also <span class="text-yellow-300">complements your kitten.</span></p>
 
-       <h1 class="boldtxt text-center text-2xl">We have already more than 12k cats</h1>
+       <h1 class="boldtxt text-center text-2xl xl:text-4xl">We have already more than 12k cats</h1>
 
        <!-- Testimonial cards -->
 
-       <div class="relative flex justify-center items-center mt-12 overflow-x-hidden">
+       <div class="relative flex justify-center items-center mt-12 overflow-y-visible">
         <!-- Left shadow card -->
-        <div class="hidden md:block absolute -left-6 rotate-12 opacity-60 z-0 md:max-w-sm w-full bg-gradient-to-br from-[#2a2a2a]/80 to-[#1a1a1a]/80 rounded-3xl p-6">
+        <div class="hidden md:block absolute xl:left-40 -left-6 rotate-12 opacity-60 z-0 md:max-w-sm w-full bg-gradient-to-br from-[#2a2a2a]/80 to-[#1a1a1a]/80 rounded-3xl p-6">
+          <p>Exactly what I was looking for. Fits my whiskers comfortably and purrfect for any occasion.</p>
+      
+
+          <div class="flex items-center justify-start mt-4 ">
+            
+            
+            <img class="w-20 h-20 aspect-square rounded-full mr-4" src="https://tr.rbxcdn.com/180DAY-d2aa8b558f4c73dc77ab184210a56788/420/420/Hat/Webp/noFilter" alt="">
+     
+            <div>
+            <p class="mb-3">Mister Cat</p>
+    
+              <div class="flex text-yellow-300 gap-x-1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#e9cc23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#e9cc23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#e9cc23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#e9cc23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#e9cc23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+
+         <!-- Left shadow card 2 -->
+         <div class="hidden xl:block absolute -left-20 -rotate-12 z-0 md:max-w-sm w-full bg-gradient-to-br from-[#2a2a2a]/80 to-[#1a1a1a]/80 rounded-3xl p-6">
           <p>Exactly what I was looking for. Fits my whiskers comfortably and purrfect for any occasion.</p>
       
 
@@ -116,7 +154,32 @@
         </div>
       
         <!-- Right shadow card -->
-        <div class="hidden md:block absolute -right-6 -rotate-12 opacity-60 z-0 md:max-w-sm w-full bg-gradient-to-br from-[#2a2a2a]/80 to-[#1a1a1a]/80 rounded-3xl p-6">
+        <div class="hidden md:block absolute xl:right-40 -right-6 -rotate-12 opacity-60 z-0 md:max-w-sm w-full bg-gradient-to-br from-[#2a2a2a]/80 to-[#1a1a1a]/80 rounded-3xl p-6">
+          <p>Exactly what I was looking for. Fits my whiskers comfortably and purrfect for any occasion.</p>
+      
+
+          <div class="flex items-center justify-start mt-4 ">
+            
+            
+            <img class="w-20 h-20 aspect-square rounded-full mr-4" src="https://tr.rbxcdn.com/180DAY-d2aa8b558f4c73dc77ab184210a56788/420/420/Hat/Webp/noFilter" alt="">
+     
+            <div>
+            <p class="mb-3">Mister Cat</p>
+    
+              <div class="flex text-yellow-300 gap-x-1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#e9cc23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#e9cc23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#e9cc23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#e9cc23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#e9cc23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+
+        <!-- Right shadow card 2 -->
+        <div class="hidden xl:block absolute -right-20 rotate-12 opacity-100 z-0 md:max-w-sm w-full bg-gradient-to-br from-[#2a2a2a]/80 to-[#1a1a1a]/80 rounded-3xl p-6">
           <p>Exactly what I was looking for. Fits my whiskers comfortably and purrfect for any occasion.</p>
       
 
@@ -172,11 +235,17 @@
       <!-- Sale Section -->
 
 
-      <h1 class="boldtxt text-center md:pb-4 text-2xl mt-16 mb-4 text-white">Get Ready to Save Big!</h1>
+      <h1 class="boldtxt text-center md:pb-4 text-2xl mt-16 mb-4 text-white xl:text-4xl">Get Ready to Save Big!</h1>
       
       
 
       <div class="grid grid-flow-col grid-rows-2 px-4 gap-2 lg:my-20">
+
+        <div class="hidden xl:block aspect-square rounded-full bg-[#e3e7e7]">
+        </div>
+
+        <div class="hidden xl:block aspect-square rounded-3xl bg-[#a08887]">
+        </div>
 
 
         <div class="aspect-square rounded-full bg-cover bg-center bg-no-repeat bg-[url(img/cat1.png)]">
@@ -186,11 +255,11 @@
         </div>
 
         <div class="aspect-square rounded-3xl relative bg-[#f3e2cc] flex justify-center">
-          <h2 class="absolute lighttxt text-center text-l md:text-xl lg:text-2xl top-1 md:top-2 text-black">Fall Sale</h2>
-          <h1 class="absolute boldtxt text-center text-2xl md:text-3xl lg:text-4xl md:top-9 top-6 text-black">50% OFF</h1>
+          <h2 class="absolute lighttxt text-center text-l md:text-xl lg:text-2xl xl:text-5xl top-1 xl:top-4 md:top-2 text-black">Fall Sale</h2>
+          <h1 class="absolute boldtxt text-center text-2xl md:text-3xl lg:text-4xl xl:text-6xl xl:top-16 md:top-9 top-6 text-black">50% OFF</h1>
       
           <div class="text-black lighttxt flex mb-2 md:mb-4  absolute bottom-0">
-            <p class="md:text-xl">Shop Now</p>
+            <p class="md:text-xl xl:text-3xl">Shop Now</p>
             <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></button>
            </div>
       
@@ -206,48 +275,56 @@
         <div class="hidden md:block aspect-square rounded-3xl bg-[#a08887]">
         </div>
 
+        
+
        </div>
 
 
-       <h1 class="boldtxt text-center text-2xl mt-16 mb-4 text-white lg:mb-10">FAQ</h1>
+       <h1 class="boldtxt text-center text-2xl mt-16 mb-4 text-white lg:mb-10 xl:text-4xl">FAQ</h1>
 
-      <section class="md:mx-28">
+      <section class="md:mx-28 xl:mx-64">
 
        <details class="mb-4 group">
-        <summary class="bg-[#222222] md:text-lg text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> What payment methods do you accept? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
-        <p class="bg-[#222222] md:text-base text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">We accept all major credit and debit cards, including Visa, MasterCard, American Express, and Discover.</p>
+        <summary class="bg-[#222222] md:text-lg xl:text-2xl xl:px-8 text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> What payment methods do you accept? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <p class="bg-[#222222] md:text-base xl:text-xl xl:px-8 text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">We accept all major credit and debit cards, including Visa, MasterCard, American Express, and Discover.</p>
       </details>
         
       <details class="mb-4 group">
-        <summary class="bg-[#222222] md:text-lg text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> How long does shipping take? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
-        <p class="bg-[#222222] md:text-base text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">Standard shipping typically takes 5-7 business days, while expedited shipping options are available for faster delivery.</p>
+        <summary class="bg-[#222222] md:text-lg xl:text-2xl xl:px-8 text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> How long does shipping take? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <p class="bg-[#222222] md:text-base xl:text-xl xl:px-8 text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">Standard shipping typically takes 5-7 business days, while expedited shipping options are available for faster delivery.</p>
       </details>
 
 
       <details class="mb-4 group">
-        <summary class="bg-[#222222] md:text-lg text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> How do I track my order? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
-        <p class="bg-[#222222] md:text-base text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">Once your order is shipped, you will receive a confirmation email with a tracking number. You can use this number on our website’s tracking page to monitor your order’s progress.</p>
+        <summary class="bg-[#222222] md:text-lg xl:text-2xl xl:px-8 text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> How do I track my order? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <p class="bg-[#222222] md:text-base xl:text-xl xl:px-8 text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">Once your order is shipped, you will receive a confirmation email with a tracking number. You can use this number on our website’s tracking page to monitor your order’s progress.</p>
       </details>
 
       <details class="mb-4 group">
-        <summary class="bg-[#222222] md:text-lg text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> Do you offer international shipping? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
-        <p class="bg-[#222222] md:text-base text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">Yes, we offer international shipping to most countries. Shipping fees and delivery times may vary depending on your location. Please check our shipping policy for more information.</p>
+        <summary class="bg-[#222222] md:text-lg xl:text-2xl xl:px-8 text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> Do you offer international shipping? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <p class="bg-[#222222] md:text-base xl:text-xl xl:px-8 text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">Yes, we offer international shipping to most countries. Shipping fees and delivery times may vary depending on your location. Please check our shipping policy for more information.</p>
       </details>
 
       <details class="mb-2 group">
-        <summary class="bg-[#222222] md:text-lg text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> How can I contact costumer support? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
-        <p class="bg-[#222222] md:text-base text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">You can reach our customer support team via email at support@example.com or through our live chat available on our website. We're here to help you 24/7.</p>
+        <summary class="bg-[#222222] md:text-lg xl:text-2xl xl:px-8 text-m boldtxt  list-none py-4 px-4 mx-4 rounded-xl flex justify-between w-auto min-w-0"> How can I contact costumer support? <svg class="w-7 h-7 text-white mt-2 mx-0 block transform transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <p class="bg-[#222222] md:text-base xl:text-xl xl:px-8 text-sm pb-4 pt-2 -my-3 mb-4 px-4 mx-4 rounded-b-xl">You can reach our customer support team via email at support@example.com or through our live chat available on our website. We're here to help you 24/7.</p>
       </details>
         
-      <div class="text-white lighttxt flex justify-self-center pt-2 justify-between">
+      <div class="text-white lighttxt flex justify-self-center pt-2 justify-between xl:text-xl xl:my-4">
         <p>See More</p>
         <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></button>
        </div>
 
       </section>
 
+
+      <h1 class="boldtxt text-center text-2xl mt-16 mb-4 text-white lg:mb-10 xl:text-4xl">Let's Talk</h1>
+
        
-      <section class="md:mx-28 lg:flex lg:justify-between lg:mt-10">
+      <section class="md:mx-28 lg:flex lg:justify-between lg:mt-10 xl:mt-16 xl:gap-6">
+
+        <div class="hidden xl:block bg-[#bfbfbf] mx-4 mb-3 mt-8 h-40 rounded-3xl lg:w-full lg:h-auto lg:mx-1 lg:my-0">
+        </div>
 
        <div class="bg-cover bg-center bg-no-repeat bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtKGK9PcQqWWmjNOffC8Gq7j3r7iLFEqFJsA&s')] mx-4 mb-3 mt-8 h-40 rounded-tl-xl rounded-br-xl rounded-tr-[6rem] rounded-bl-[6rem] lg:w-full lg:h-auto lg:mx-1 lg:my-0">
       </div>
@@ -255,7 +332,7 @@
        
       
 
-       <div class="bg-[#455b6a] space-y-3 py-10 px-4 mx-4 mb-3 mt-2 rounded-3xl lg:w-full lg:h-full lg:my-0">
+       <div class="bg-[#455b6a] space-y-3 py-10 px-4 mb-3 mx-4 mt-2 rounded-3xl lg:w-full lg:h-full lg:my-0 xl:mx-0">
        
         <div>
           <input type="text" id="name" name="name" placeholder="Name" 
@@ -285,15 +362,65 @@
       
 
 
-       <footer></footer>
+      
        
     
 
 
 
-    </main>
+    
    
 
-     
+  </div>
+  <footer class="bg-[#1c1c1c] text-white py-4 mt-10 lg:py-20">
+
+    <div class="w-full max-w-screen-xl mx-auto sm:px-40 px-15">
+
+    <div class="lg:flex lg:justify-between align-top">
+
+      <div>
+    <p class="boldtxt text-center sm:text-start text-lg sm:text-xl md:text-2xl lg:text-3xl">Elegant</p>
+    <p class="lighttxt text-center sm:text-start text-sm">Elevate your Cat Today!</p>
+  </div>
+
+    <div class="flex my-8 justify-between lg:mt-0 ">
+      <div class="lg:mr-5">
+        <p class="boldtxt mb-4">Pages</p>
+        <p class="mb-2">Home</p>
+        <p class="mb-2">New Collection</p>
+        <p class="mb-2">Catalog</p>
+        <p>Delivery</p>
+      </div>
+
+      <div>
+        <p class="boldtxt mb-4">Legal Information</p>
+        <p class="mb-2">Privacy Policy</p>
+        <p>Terms & Conditions</p>
+      </div>
+    </div>
+
+  
+    <div>
+    <p class="boldtxt text-center lg:text-start text-lg mb-3">Contact Us</p>
+
+    <div class="flex justify-between">
+      <div class="rounded-full border p-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+      <div class="rounded-full border p-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+      <div class="rounded-full border p-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></div>
+      <div class="rounded-full border p-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube-icon lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg></div>
+    </div>
+  </div>
+
+    <div class="flex items-center justify-center mt-8">
+      <div class="bg-black rounded-full p-3 w-12 h-12">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-icon lucide-arrow-up"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+   </footer>
+  </main>
   </body>
 </html>
