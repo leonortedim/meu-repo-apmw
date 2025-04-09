@@ -1,20 +1,15 @@
-let eu = "Leonor";
-let idade = 19;
+function changeLamp() {
+  const img = document.getElementById("luz");
+  const button = document.getElementById("switch");
+  const body = document.body;
 
-let idadex = idade * 7;
-
-console.log(idadex.toString(), "is my age multiplied by 7");
-
-let amigos = ["Maria", "José", "Ana"];
-
-let objeto = {
-  nome: "Leonor",
-  idade: 19,
-  isStudent: true,
-};
-
-let amigoscoisos = [
-  { nome: "Maria", idade: 20, isStudent: true },
-    { nome: "José", idade: 22, isStudent: false },
-    { nome: "Ana", idade: 21, isStudent: true },
-]
+  if (img.src.includes("https://i.postimg.cc/KjK1wL3c/bulb-off.png")) {
+    img.src = "https://i.postimg.cc/6QyTynzr/bulb-on.png";
+    button.innerHTML = "Turn off";
+    body.classList.add("light-on");
+  } else {
+    img.src = "https://i.postimg.cc/KjK1wL3c/bulb-off.png";
+    button.innerHTML = "Turn on";
+    body.classList.remove("light-on");
+  } 
+}

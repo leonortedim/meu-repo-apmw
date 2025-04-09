@@ -15,3 +15,12 @@
     margin-bottom: 20px;
 }
 
+.cor {
+    background-color: black;
+    transition: background-color 0.5s ease;
+}
+
+.cor.light-on {
+    background-color: white;
+}
+
