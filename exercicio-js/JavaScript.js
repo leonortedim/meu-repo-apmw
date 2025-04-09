@@ -7,6 +7,7 @@ function changeLamp() {
     img.src = "https://i.postimg.cc/6QyTynzr/bulb-on.png";
     button.innerHTML = "Turn off";
     body.classList.add("light-on");
+    
   } else {
     img.src = "https://i.postimg.cc/KjK1wL3c/bulb-off.png";
     button.innerHTML = "Turn on";
