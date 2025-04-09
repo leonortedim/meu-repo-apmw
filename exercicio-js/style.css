@@ -1,0 +1,17 @@
+#cenasmeio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    margin: 0;
+    flex-direction: column;
+}
+
+#cenasmeio img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
