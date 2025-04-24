@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cooking Mama Mini Game</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: #fff3dc;
+      font-family: sans-serif;
+      overflow: hidden;
+    }
+
+    .hidden { display: none; }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    #carrot-stage, #egg-stage {
+      position: relative;
+      height: 400px;
+    }
+
+    /* Carrot Slices */
+    .carrot-slice {
+      width: 150px;
+      position: absolute;
+      top: 150px;
+      transition: transform 0.4s ease;
+      z-index: 1;
+      left: 50%;
+      transform: translateX(-75px);
+    }
+
+    .s1 { clip-path: inset(0 83.33% 0 0); }
+    .s2 { clip-path: inset(0 66.66% 0 16.66%); }
+    .s3 { clip-path: inset(0 50% 0 33.33%); }
+    .s4 { clip-path: inset(0 33.33% 0 50%); }
+    .s5 { clip-path: inset(0 16.66% 0 66.66%); }
+    .s6 { clip-path: inset(0 0 0 83.33%); }
+
+    #knife {
+      width: 120px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-60px);
+      z-index: 10;
+      cursor: pointer;
+    }
+
+    .animate-knife {
+      animation: sliceDown 0.3s forwards ease-in;
+    }
+
+    @keyframes sliceDown {
+      0% { top: 0; }
+      100% { top: 140px; }
+    }
+
+    #nextBtn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background: #ffb347;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    /* Egg stage */
+    #egg {
+      width: 200px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .cracked {
+      transform: scale(1.2) rotate(10deg);
+      filter: brightness(1.1) saturate(1.2);
+    }
+
+    #output {
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Slice the Carrot!</h1>
+
+  <!-- Carrot Stage -->
+  <div id="carrot-stage">
+    <img class="carrot-slice s1" id="slice1" src="https://a0.anyrgb.com/pngimg/1572/966/carrot-rabbit-eat-carrot-cartoon-carrot-carrot-cartoon-bunch-of-carrots-carrots-carrot-juice-produce-vegetables-vegetable.png">
+    <img class="carrot-slice s2" id="slice2" src="https://a0.anyrgb.com/pngimg/1572/966/carrot-rabbit-eat-carrot-cartoon-carrot-carrot-cartoon-bunch-of-carrots-carrots-carrot-juice-produce-vegetables-vegetable.png">
+    <img class="carrot-slice s3" id="slice3" src="https://a0.anyrgb.com/pngimg/1572/966/carrot-rabbit-eat-carrot-cartoon-carrot-carrot-cartoon-bunch-of-carrots-carrots-carrot-juice-produce-vegetables-vegetable.png">
+    <img class="carrot-slice s4" id="slice4" src="https://a0.anyrgb.com/pngimg/1572/966/carrot-rabbit-eat-carrot-cartoon-carrot-carrot-cartoon-bunch-of-carrots-carrots-carrot-juice-produce-vegetables-vegetable.png">
+    <img class="carrot-slice s5" id="slice5" src="https://a0.anyrgb.com/pngimg/1572/966/carrot-rabbit-eat-carrot-cartoon-carrot-carrot-cartoon-bunch-of-carrots-carrots-carrot-juice-produce-vegetables-vegetable.png">
+    <img class="carrot-slice s6" id="slice6" src="https://a0.anyrgb.com/pngimg/1572/966/carrot-rabbit-eat-carrot-cartoon-carrot-carrot-cartoon-bunch-of-carrots-carrots-carrot-juice-produce-vegetables-vegetable.png">
+    <img src="https://t4.ftcdn.net/jpg/00/73/45/71/360_F_73457172_tlTz4PwodZsc0XQhEM5gaXAOHZibLAg5.jpg" id="knife" onclick="sliceCarrot()" alt="Knife">
+    <p id="output">Slices: 0</p>
+    <button id="nextBtn" class="hidden" onclick="goToEgg()">Next Step ➜ Crack the Egg</button>
+  </div>
+
+  <!-- Egg Stage -->
+  <div id="egg-stage" class="hidden">
+    <h1>Crack the Egg!</h1>
+    <img src="https://as1.ftcdn.net/v2/jpg/05/49/50/78/1000_F_549507872_d15KNvkuIb8Avi1SZOmbiJrWV92vLoVU.jpg" id="egg" onclick="crackEgg()">
+    <p id="eggOutput">Click the egg to crack it!</p>
+  </div>
+
+  <script>
+    let currentSlice = 0;
+    const offsets = [-180, -120, -60, 60, 120, 180];
+
+    function sliceCarrot() {
+      if (currentSlice >= 6) return;
+
+      const knife = document.getElementById('knife');
+      knife.classList.add('animate-knife');
+
+      const slice = document.getElementById('slice' + (currentSlice + 1));
+      setTimeout(() => {
+        slice.style.transform = `translateX(${offsets[currentSlice]}px)`;
+        knife.classList.remove('animate-knife');
+        knife.style.top = '0';
+        currentSlice++;
+
+        document.getElementById('output').innerText = `Slices: ${currentSlice}`;
+
+        if (currentSlice === 6) {
+          document.getElementById('nextBtn').classList.remove('hidden');
+        }
+      }, 300);
+    }
+
+    function goToEgg() {
+      document.getElementById('carrot-stage').classList.add('hidden');
+      document.getElementById('egg-stage').classList.remove('hidden');
+    }
+
+    function crackEgg() {
+      const egg = document.getElementById('egg');
+      egg.classList.add('cracked');
+      document.getElementById('eggOutput').innerText = "Cracked! Good job, chef 👨‍🍳";
+      egg.onclick = null;
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
