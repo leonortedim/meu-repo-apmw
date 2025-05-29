@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  background: linear-gradient(to right, #1a2a3a, #3a4a5a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e6f1f8;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  max-width: 1200px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.image-panel {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-panel img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  gap: 20px;
+}
+
+/* Card Base */
+.card {
+  background-color: #4f4f4f;
+  color: #e6f1f8;
+  padding: 40px;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: all 0.4s ease;
+}
+
+/* Collapsed Card */
+.card.inactive {
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Expanded Card */
+.card.active {
+  width: 60%;
+  cursor: pointer;
+}
+
+/* Card Title */
+.card-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Vertical Title for Inactive */
+.card.inactive .vertical-title {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: center;
+}
+
+/* Hide Title When Card is Active */
+.card.active .vertical-title {
+  display: none;
+}
+
+/* Content visibility */
+.card-content {
+  display: none;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card.active .card-content {
+  display: block;
+}
+
+
+
+.flipbook {
+  width: 1000px;
+  height: 600px;
+}
+
+.flipbook .hardcover {
+  color: white;
+  background: #72ABDA !important;
+}
+
+.flipbook .hardcover small {
+  font-size: 16px;
+}
+
+.flipbook .page {
+  background:white;
+  color: #4F81AC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.page img {
+  width: 70%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.flipbook .page small {
+  font-size: 16px;
+  margin: 10px;
+}

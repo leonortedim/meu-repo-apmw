@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expanding Cards Fix</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main>
+
+    <div class="flipbook">
+  <div class="hardcover"> My Art Book <small>~ Start Flipping</small></div>
+  <div class="hardcover"></div>
+
+
+  <div>
+    <small>Showcase of some of my 2D work.</small>
+  </div>
+
+  <div>
+    <img src="https://i.pinimg.com/736x/b2/60/94/b26094970505bcd59c2e5fe8b6f41cf0.jpg" alt="">
+    <small>Random Cat</small>
+  </div>
+
+  <div>
+    <img src="https://i.pinimg.com/736x/b2/60/94/b26094970505bcd59c2e5fe8b6f41cf0.jpg" alt="">
+    <small>Random Cat</small>
+  </div>
+
+  <div>
+    <img src="https://i.pinimg.com/736x/b2/60/94/b26094970505bcd59c2e5fe8b6f41cf0.jpg" alt="">
+    <small>Random Cat</small>
+  </div>
+
+  <div class="hardcover"></div>
+  <div class="hardcover"> Thank you <small>~ Mikashi</small></div>
+</div>
+
+
+
+ <div class="container">
+
+  <div class="image-panel">
+    <img src="cat.png" alt="Cat image" />
+  </div>
+
+
+  <div class="wrapper">
+    <div class="card active" id="skills">
+      <div class="card-title vertical-title">. SKILLS</div>
+      <div class="card-content">
+        <p>• Adobe Suite</p>
+        <p>• Figma</p>
+        <p>• HTML/CSS</p>
+        <p>• Unity</p>
+      </div>
+    </div>
+    <div class="card inactive" id="background">
+      <div class="card-title vertical-title">. BACKGROUND</div>
+      <div class="card-content">
+        <p><strong>2020–2023</strong><br />EASR – Communication Design: WebDesign Specialization</p>
+        <p><strong>2023</strong><br />Internship at CREAT! Marketing Consultant</p>
+        <p><strong>2023 – present</strong><br />ULHT – Videogames and multimedia applications</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</main>
+
+
+
+
+  <script src="script.js"></script>
+  <script src="jquery.js"></script>
+  <script src="turn.js"></script>
+  
+  <script>$(".flipbook").turn();</script>
+</body>
+</html>
+
