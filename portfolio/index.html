@@ -4,13 +4,67 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Expanding Cards Fix</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="bg-[#5D91BD] audiowide ">
 
-  <main>
 
-    <div class="flipbook">
+  <img class="md:hidden" src="img/mobileheader.png" alt="">
+
+
+    <img class="hidden md:block md:w-full md:h-full" src="img/header.png" alt="">
+
+  <header class="max-w-screen-2xl">
+   <!-- Left-side navbar, part of layout -->
+  <div class="absolute -left-9 transform lg:top-[60%] flex flex-col gap-4">
+    <a href="#gallery" class="bg-[#72ABDA] hover:bg-[#82b9e6] text-white px-12 py-5 rounded-full lg:text-3xl text-right">GALLERY</a>
+    <a href="#games" class="bg-[#72ABDA] hover:bg-[#82b9e6] text-white px-12 py-5  rounded-full lg:text-3xl text-right mr-9">GAMES</a>
+    <a href="#contact" class="bg-[#72ABDA] hover:bg-[#82b9e6] text-white px-12 py-5  rounded-full lg:text-3xl text-right">CONTACT</a>
+  </div>
+
+
+
+  </header>
+
+
+
+  <main class="max-w-screen-2xl mx-50">
+
+    <div class="flex justify-between h-[80vh]">
+
+      <img class="rounded-full" src="img/retrato.png" alt="">
+
+      <div class="flex flex-grow-1 h-full gap-5">
+
+    <div class="card active" id="skills">
+      <div class="card-title vertical-title">. SKILLS</div>
+      <div class="card-content">
+        <p>• Adobe Suite</p>
+        <p>• Figma</p>
+        <p>• HTML/CSS</p>
+        <p>• Unity</p>
+      </div>
+    </div>
+    <div class="card inactive" id="background">
+      <div class="card-title vertical-title">. BACKGROUND</div>
+      <div class="card-content">
+        <p><strong>2020–2023</strong><br />EASR – Communication Design: WebDesign Specialization</p>
+        <p><strong>2023</strong><br />Internship at CREAT! Marketing Consultant</p>
+        <p><strong>2023 – present</strong><br />ULHT – Videogames and multimedia applications</p>
+      </div>
+    </div>
+  </div>
+
+    </div>
+
+
+    <section>
+    <div class= " hidden lg:block flipbook">
   <div class="hardcover"> My Art Book <small>~ Start Flipping</small></div>
   <div class="hardcover"></div>
 
@@ -37,7 +91,7 @@
   <div class="hardcover"></div>
   <div class="hardcover"> Thank you <small>~ Mikashi</small></div>
 </div>
-
+</section>
 
 
  <div class="container">
