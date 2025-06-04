@@ -28,21 +28,9 @@
   border-radius: 20px;
 }
 
-.wrapper {
-  display: flex;
-  flex-grow: 1;
-  height: 100%;
-  gap: 20px;
-}
 
 /* Card Base */
 .card {
-  background-color: #4f4f4f;
-  color: #e6f1f8;
-  padding: 40px;
-  border-radius: 30px;
-  overflow: hidden;
-  display: flex;
   flex-direction: column;
   position: relative;
   justify-content: flex-start;
@@ -53,28 +41,23 @@
 /* Collapsed Card */
 .card.inactive {
   width: 120px;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   cursor: pointer;
 }
 
 /* Expanded Card */
 .card.active {
-  width: 60%;
+  width: 80%;
   cursor: pointer;
 }
 
 /* Card Title */
-.card-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
 
 /* Vertical Title for Inactive */
 .card.inactive .vertical-title {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
-  text-align: center;
 }
 
 /* Hide Title When Card is Active */
