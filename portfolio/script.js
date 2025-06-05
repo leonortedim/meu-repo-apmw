@@ -11,4 +11,13 @@ cards.forEach(card => {
   });
 });
 
+  let currentFlip = 0;
+  const flipCarousel = document.getElementById("flipCarousel");
+  const totalFlipPages = flipCarousel.children.length;
+
+  function flipMove(dir) {
+    currentFlip = (currentFlip + dir + totalFlipPages) % totalFlipPages;
+    flipCarousel.style.transform = `translateX(-${currentFlip * 100}%)`;
+  }
+
 
