@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expanding Cards Fix</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-[#5D91BD] audiowide ">
+
+
+  <img class="md:hidden w-full h-full" src="img/mobileheader.png" alt="">
+
+
+    <img class="hidden md:block md:w-full md:h-full" src="img/header.png" alt="">
+
+  <header class="max-w-screen-2xl">
+   <!-- Left-side navbar, part of layout -->
+  <div class="absolute lg:-left-9 -left-6 transform xl:top-[60%] lg:top-[45%] md:top-[35%] sm:top-[70%] top-[38%] flex flex-col gap-4">
+    <a href="index.html" class="bg-[#72ABDA] hover:bg-[#82b9e6] text-white px-9 py-4 lg:px-12 lg:py-5  rounded-full text-xl md:text-lg lg:text-3xl text-right mr-15">HOME</a>
+    <a href="games.html" class="bg-[#72ABDA] hover:bg-[#82b9e6] text-white px-9 py-4 lg:px-12 lg:py-5  rounded-full text-xl md:text-lg lg:text-3xl text-right mr-5  lg:mr-9">GAMES</a>
+    <a href="#contact" class="bg-[#72ABDA] hover:bg-[#82b9e6] text-white px-9 py-4 lg:px-12 lg:py-5  rounded-full text-xl md:text-lg lg:text-3xl text-right">CONTACT</a>
+  </div>
+
+
+
+  </header>
+
+
+
+  <main class="max-w-screen-2xl mx-auto ">
+
+    <h1 class="text-[#4F81AC] text-center text-[5rem] sm:text-[6rem] md:text-[6rem] lg:text-[9.4rem] xl:text-[15.4rem] 2xl:text-[18.4rem]">GALLERY</h1>
+    <p class="text-center text-white">Click the images!</p>
+
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 lg:px-20 xl:px-50">
+  <!-- Image Card -->
+  
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/concept3.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="This is a cool image of a concept design." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/concept4.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="This is a cool image of a concept design." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/concept5.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="This is a cool image of a concept design." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/dig1.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="This is a cool image of a concept design." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/poison.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="This is a cool image of a concept design." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/dig2.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="This is a cool image of a concept design." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/dig3.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="This is a cool image of a concept design." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/isometric.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="This is a cool image of a concept design." />
+  </div>
+
+
+  
+</div>
+
+
+<h1 class="text-[#4F81AC] text-center text-[5rem] sm:text-[6rem] md:text-[6rem] lg:text-[9.4rem] xl:text-[15.4rem] 2xl:text-[18.4rem]">DESIGN</h1>
+    <p class="text-center text-white">Click the images!</p>
+
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 lg:px-20 xl:px-50">
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/cartaz.jpg" alt="Gallery Image" class="w-full h-full object-cover" data-description="Hollow Knight poster." />
+  </div>
+  <!-- Duplicate above block as needed -->
+   <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/Cartaz1.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="'If my life was a commercial' poster." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/cartaz2.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="'If my life was a movie' poster." />
+  </div>
+  
+
+
+</div>
+
+
+
+<h1 class="text-[#4F81AC] text-center text-[5rem] sm:text-[6rem] md:text-[6rem] lg:text-[9.4rem] xl:text-[15.4rem] 2xl:text-[18.4rem]">GAMES</h1>
+    <p class="text-center text-white">Click the images!</p>
+
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 lg:px-20 xl:px-50">
+
+  
+  <!-- Duplicate above block as needed -->
+   <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/lo1.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Background concept for Luso Odyssey." />
+  </div>
+   
+   <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/lo2.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="RE-01 character concept for Luso Odyssey." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/lo3.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Inventory UI concept for Luso Odyssey." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/lo4.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Interaction UI concept for Luso Odyssey." />
+  </div>
+ 
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/lo5.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Map UI concept for Luso Odyssey." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/lo7.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Map UI concept for Luso Odyssey." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/lo8.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Background concept for Luso Odyssey." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/lo9.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Background concept for Luso Odyssey." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/lo10.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Background concept for Luso Odyssey." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/lo11.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Background concept for Luso Odyssey." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/lo12.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Padeira de Aljubarrota character concept for Luso Odyssey." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/kh1.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Background 1 for Kindergarten Hell." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/kh2.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Background 2 for Kindergarten Hell." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/kh3.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Background 3 for Kindergarten Hell." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/kh4.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Main menu for Kindergarten Hell." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/kh5.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Chapter menu for Kindergarten Hell." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/concept1.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Cozy game concept screen." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/concept2.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Cozy game asset concepts." />
+  </div>
+
+  <div class="w-full aspect-square overflow-hidden rounded-4xl cursor-pointer" onclick="openModal(this)">
+    <img src="img/concept6.png" alt="Gallery Image" class="w-full h-full object-cover" data-description="Game screen concept study." />
+  </div>
+  
+</div>
+
+
+
+
+
+<!-- Modal Overlay -->
+<div id="popupModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+  <div class="bg-white p-4 rounded-xl max-w-xl w-[90%] relative">
+    <button onclick="closeModal()" class="absolute top-2 right-2 text-gray-500 hover:text-black text-xl font-bold">&times;</button>
+    <img id="popupImage" src="" alt="Popup Image" class="w-full rounded-lg object-cover mb-4 max-h-[70vh]" />
+    <p id="popupDescription" class="text-gray-700 text-sm md:text-base"></p>
+  </div>
+</div>
+
+
+    
+
+
+
+</main>
+
+
+
+
+  <script src="script.js"></script>
+  <script src="jquery.js"></script>
+  <script src="turn.js"></script>
+  
+  <script>$(".flipbook").turn();</script>
+</body>
+</html>
+

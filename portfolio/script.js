@@ -21,3 +21,26 @@ cards.forEach(card => {
   }
 
 
+  function openModal(el) {
+    const img = el.querySelector('img');
+    const modal = document.getElementById('popupModal');
+    const popupImg = document.getElementById('popupImage');
+    const popupDesc = document.getElementById('popupDescription');
+
+    popupImg.src = img.src;
+    popupDesc.textContent = img.dataset.description || 'No description.';
+    modal.classList.remove('hidden');
+  }
+
+  function closeModal() {
+    document.getElementById('popupModal').classList.add('hidden');
+  }
+
+  // Optional: Close modal on outside click
+  document.getElementById('popupModal').addEventListener('click', (e) => {
+    if (e.target.id === 'popupModal') {
+      closeModal();
+    }
+  });
+
+
