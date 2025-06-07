@@ -1,4 +1,7 @@
 
+html {
+  scroll-behavior: smooth;
+}
 
 .audiowide {
   font-family: "Audiowide", sans-serif;
